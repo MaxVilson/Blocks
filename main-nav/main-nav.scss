@@ -1,0 +1,50 @@
+.main-nav {
+  position: absolute;
+  top: 71px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(246,246,246);
+  transform: translateX(-1040px);
+  transition: transform .3s linear;
+
+  @include for-tablet-portrait-up  {
+    position: static;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    transform: translateX(0px);;
+  }
+
+  &__list {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+
+    @include for-tablet-portrait-up {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+
+    @include for-tablet-portrait-up {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &--open {
+    transform: translateX(0px);
+  }
+}

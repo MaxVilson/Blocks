@@ -1,0 +1,19 @@
+// В этом файле должны быть стили для БЭМ-блока dynamic-title, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.dynamic-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100px;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+
+  @include for-tablet-portrait-up {
+   
+  }
+}
